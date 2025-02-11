@@ -45,11 +45,10 @@ Programovatelné automaty (PLC)
 3. K nalezeným PLC dohledejte a vysvětlete následující parametry:
     - Parametry CPU
     - Velikosti a typy pamětí
-    - Napájecí napětí a minimální odběr (proud při napájecím napětí)
+    - Napájecí napětí a odběr (proud při napájecím napětí)
     - Modulární/kompaktní
     - Počty digitálnních a analogových vstupů a výstupů a jejich využití
-    - Spěrnice jak pro programování samotného PLC, tak i pro rozšíření o další moduly
-    - 
+    - Další rozhraní pro komunikaci PLC s okolím (pro programování samotného PLC, tak i pro rozšíření o další moduly a zařízení)
 
 4. V automatizační technice se setkáme s řadou dalších řídících jednotek. Zjistěte, jaké se označují následujícími zkratkami a pro jakou oblast automatizace se používají:
     - iPC
@@ -59,8 +58,28 @@ Programovatelné automaty (PLC)
 
 ### 2. Části PLC
 
+1. U zvoleného výrobce vyhledejte v katalogu, případně eshopu, či konfigurátoru, jednotlivé komponenty pro funkční sestavu PLC s následujícími parametry:
+    - CPU 32b nebo vyšší
+    - 23 DI
+    - 7 AI
+    - 4 DO s PWM
+    - 2 DO
+    - 3 releové výstupy
+    - Sběrnice s možností rozšíření o vzdálené moduly IO
 
-<!-- štítkové údaje -->
+<details>
+    <summary> :bulb: Tip: </summary>
+        Některé firmy vyrábějící modulární PLC používají tzv. konfigurátory sestav, které bývají součástí IDE a případně propojeny s e-shopem.
+        Další možností, jak si usnadnit práci, je zaslat požadavek přímo firmám jako předběžnou poptávku. Získáte tak i informaci o cenách.
+</details>
+
+> :key: **CPU u PLC**
+>
+> Ačkoliv zkratka CPU je obecně braná jako označení mikroprocesoru, u PLC se tím obvykle myslí celý řídící modul, který v dnešní době může obsahovat více procesorů.
+
+2. Podrobněji prozkoumejte parametry CPU 
+
+3. Zjistěte nejen typ sběrnice, ale i její hlavní parametry. Můžete zkusit zjistit i informace o použitém protokolu.
 
 
 ### 3. Základní diagnostika PLC
@@ -79,11 +98,12 @@ Programovatelné automaty (PLC)
     - Nástroj Watch
     - Monitor
     - Log soubory
+    - ...
 
-    <details>
-        <summary> :bulb: Tip: </summary>
-            Otevřete si programovací prostředí pro PLC a uvedené nástroje vyhledejte a vyzkoušejte. Je možné, že v některých prostředích některé nástroje nenaleznete, nebo pod jiným názvem (poznamenejte si tyto názvy). Případně zkuste zjistit jiné diagnostické nástroje.
-    </details>
+<details>
+    <summary> :bulb: Tip: </summary>
+        Otevřete si programovací prostředí pro PLC a uvedené nástroje vyhledejte a vyzkoušejte. Je možné, že v některých prostředích některé nástroje nenaleznete, nebo pod jiným názvem (poznamenejte si tyto názvy). Případně zkuste zjistit jiné diagnostické nástroje.
+</details>
 
 
 
