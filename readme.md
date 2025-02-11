@@ -1,0 +1,90 @@
+[Co dodělat ]: #
+[nic ]: #
+
+
+# Programovatelné automaty (PLC)
+
+$${\color{#FFA500}E14 \space \color{Gold}S25 \space \color{#4682B4}A10 }$$
+
+## Cíl
+-   Studenti se budou orientovat v běžných PLC a rozliší je podle primárního využití.
+-   Budou mít povědomí o dalších řídících jednotkách, používaných v automatizaci.
+-   Popíší základní částli PLC,
+-   a provedou základní diagnostiku.
+-   Dále se studenti budou orientovat v oblasti programovacích jazyků pro PLC.
+
+## Ověření cílů
+
+Programovatelné automaty (PLC)
+
+1) Základní vlastnosti, rozdělení: podle použití, velikosti a podle modulárnosti
+2) Popis částí PLC
+3) Základní diagnostika PLC
+4) Programovací prostředí a programovací jazyky pro PLC
+
+## Úlohy
+
+### 1. Základní vlastnosti a rozdělení PLC
+
+> :key: **PLC**
+>
+> Programovatelný logický automat
+> Programovatelný logický automat. Online. In: Wikipedia: the free encyclopedia. San Francisco (CA): Wikimedia Foundation, 2024, 23. 2. 2024 v 09:19. Dostupné z: https://cs.wikipedia.org/wiki/Programovateln%C3%BD_logick%C3%BD_automat. [cit. 2024-12-28].
+
+1. Jaký je rozdíl mezi PLC a embeded PLC? Co znamená slovo embedet obecně a u jakých dalších typů řídících jednotek se používá?
+
+> PLC se často rozdělují podle výkonu, ale lepší je rozlišovat pro jakou oblast automatizace jsou určena.
+
+2. Vyhledejte a zdůvodněte konkrétní typy PLC pro následující oblasti použití:
+    - Automatizace rodinných domů a bytů
+    - Automatizace jednoúčelových strojů
+    - Automatizace hotelů a větších budov občanské výstavby
+    - Automatizace výrobních linek
+    - Automatizace velkých továren, elektráren, apod.
+
+3. K nalezeným PLC dohledejte a vysvětlete následující parametry:
+    - Parametry CPU
+    - Velikosti a typy pamětí
+    - Napájecí napětí a minimální odběr (proud při napájecím napětí)
+    - Modulární/kompaktní
+    - Počty digitálnních a analogových vstupů a výstupů a jejich využití
+    - Spěrnice jak pro programování samotného PLC, tak i pro rozšíření o další moduly
+    - 
+
+4. V automatizační technice se setkáme s řadou dalších řídících jednotek. Zjistěte, jaké se označují následujícími zkratkami a pro jakou oblast automatizace se používají:
+    - iPC
+    - NC (Numerical Control)
+    - MCU
+
+
+### 2. Části PLC
+
+
+<!-- štítkové údaje -->
+
+
+### 3. Základní diagnostika PLC
+
+1. Vyhledejte technický list vybraného PLC a zjistěte, co lze zjistit o PLC z kontrolek (LED na samotném PLC).
+
+2. Vymyslete postup, jak pomocí multimetru ověřit:
+    - Napětí na napájecích svorkách zdroje a PLC, případně dalších komponent
+    - Zkrat mezi vodiči
+    - Prohození vodičů
+    - Stav DO
+    - Spečené releové kontakty
+
+3. Diagnostiku PLC lze provádět i pomocí programovacího prostředí (IDE). K čemu slouží následující nástroje:
+    - Forced value (vnucení/uzamknutí hodnot)
+    - Nástroj Watch
+    - Monitor
+    - Log soubory
+
+    <details>
+        <summary> :bulb: Tip: </summary>
+            Otevřete si programovací prostředí pro PLC a uvedené nástroje vyhledejte a vyzkoušejte. Je možné, že v některých prostředích některé nástroje nenaleznete, nebo pod jiným názvem (poznamenejte si tyto názvy). Případně zkuste zjistit jiné diagnostické nástroje.
+    </details>
+
+
+
+
