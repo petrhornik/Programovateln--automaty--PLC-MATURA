@@ -1,15 +1,14 @@
 [Co dodělat ]: #
 [nic ]: #
 
-
 # Programovatelné automaty (PLC)
 
-$${\color{#FFA500}E14 \space \color{Gold}S25 \space \color{#4682B4}A10 }$$
+$${\color{#FFA500}E10 \space \color{Gold}S21 }$$
 
 ## Cíl
 -   Studenti se budou orientovat v běžných PLC a rozliší je podle primárního využití.
 -   Budou mít povědomí o dalších řídících jednotkách, používaných v automatizaci.
--   Popíší základní částli PLC,
+-   Popíší základní části PLC,
 -   a provedou základní diagnostiku.
 -   Dále se studenti budou orientovat v oblasti programovacích jazyků pro PLC.
 
@@ -31,7 +30,7 @@ Programovatelné automaty (PLC)
 > Programovatelný logický automat
 > Programovatelný logický automat. Online. In: Wikipedia: the free encyclopedia. San Francisco (CA): Wikimedia Foundation, 2024, 23. 2. 2024 v 09:19. Dostupné z: https://cs.wikipedia.org/wiki/Programovateln%C3%BD_logick%C3%BD_automat. [cit. 2024-12-28].
 
-1. Jaký je rozdíl mezi PLC a embeded PLC? Co znamená slovo embedet obecně a u jakých dalších typů řídících jednotek se používá?
+1. Jaký je rozdíl mezi PLC a embedded PLC? Co znamená slovo embedded obecně a u jakých dalších typů řídících jednotek se používá?
 
 > PLC se často rozdělují podle výkonu, ale lepší je rozlišovat pro jakou oblast automatizace jsou určena.
 
@@ -47,7 +46,7 @@ Programovatelné automaty (PLC)
     - Velikosti a typy pamětí
     - Napájecí napětí a odběr (proud při napájecím napětí)
     - Modulární/kompaktní
-    - Počty digitálnních a analogových vstupů a výstupů a jejich využití
+    - Počty digitálních a analogových vstupů a výstupů a jejich využití
     - Další rozhraní pro komunikaci PLC s okolím (pro programování samotného PLC, tak i pro rozšíření o další moduly a zařízení)
 
 4. V automatizační technice se setkáme s řadou dalších řídících jednotek. Zjistěte, jaké se označují následujícími zkratkami a pro jakou oblast automatizace se používají:
@@ -55,16 +54,15 @@ Programovatelné automaty (PLC)
     - NC (Numerical Control)
     - MCU
 
-
 ### 2. Části PLC
 
-1. U zvoleného výrobce vyhledejte v katalogu, případně eshopu, či konfigurátoru, jednotlivé komponenty pro funkční sestavu PLC s následujícími parametry:
+1. U zvoleného výrobce vyhledejte v katalogu, případně e-shopu, či konfigurátoru, jednotlivé komponenty pro funkční sestavu PLC s následujícími parametry:
     - CPU 32b nebo vyšší
     - 23 DI
     - 7 AI
     - 4 DO s PWM
     - 2 DO
-    - 3 releové výstupy
+    - 3 reléové výstupy
     - Sběrnice s možností rozšíření o vzdálené moduly IO
 
 <details>
@@ -75,12 +73,11 @@ Programovatelné automaty (PLC)
 
 > :key: **CPU u PLC**
 >
-> Ačkoliv zkratka CPU je obecně braná jako označení mikroprocesoru, u PLC se tím obvykle myslí celý řídící modul, který v dnešní době může obsahovat více procesorů.
+> Ačkoliv zkratka CPU je obecně brána jako označení mikroprocesoru, u PLC se tím obvykle myslí celý řídící modul, který v dnešní době může obsahovat více procesorů.
 
 2. Podrobněji prozkoumejte parametry CPU 
 
 3. Zjistěte nejen typ sběrnice, ale i její hlavní parametry. Můžete zkusit zjistit i informace o použitém protokolu.
-
 
 ### 3. Základní diagnostika PLC
 
@@ -91,12 +88,17 @@ Programovatelné automaty (PLC)
     - Zkrat mezi vodiči
     - Prohození vodičů
     - Stav DO
-    - Spečené releové kontakty
+    - Spečené reléové kontakty
+
+<details>
+    <summary> :bulb: Tip: </summary>
+        Podívejte se na štítkové údaje, případně do technických listů. Naleznete v nich některé informace potřebné pro diagnostiku.
+</details>
 
 3. Diagnostiku PLC lze provádět i pomocí programovacího prostředí (IDE). K čemu slouží následující nástroje:
     - Forced value (vnucení/uzamknutí hodnot)
-    - Nástroj Watch
-    - Monitor
+    - Nástroje Watch a Monitor
+    - Debugger
     - Log soubory
     - ...
 
@@ -105,6 +107,14 @@ Programovatelné automaty (PLC)
         Otevřete si programovací prostředí pro PLC a uvedené nástroje vyhledejte a vyzkoušejte. Je možné, že v některých prostředích některé nástroje nenaleznete, nebo pod jiným názvem (poznamenejte si tyto názvy). Případně zkuste zjistit jiné diagnostické nástroje.
 </details>
 
+### 4. Programovací jazyky pro PLC
 
+1. Založte projekt a v něm programy v pěti jazycích (ST - Struktural Text, LD - Ladder Diagram, CFC - Continous Function Chart a dvou dalších podle vlastního výběru).
+
+2. V každém jazyce napište a odzkoušejte program pro zpožděné vypnutí světla.
+
+> :key: **Programovací jazyky pro PLC**
+>
+> Programovacími jazyky pro PLC se zabývá norma IEC 61 131-3. 
 
 
