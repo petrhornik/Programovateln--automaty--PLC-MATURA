@@ -36,14 +36,17 @@ Programovatelné automaty (PLC)
    >  - samostatné větší zařízení co se montuje samostatně
    >  - jednodušší přístup a opravy
    >  - je modulární dá se upravovat
-   >  - jednodušší nasazení - propojuje se se zbytkem HW externě dráty 
+   >  - jednodušší nasazení - propojuje se se zbytkem HW externě dráty
+   >  - robustnější konstrukce s lepší výdrží pro průmyslové nasazení
    
    > Embedded => označuje že je komponenta či souřástka je napevno umístěna např.: k PCB
    >             - např. kontroler integrovaný obvobu
    
    > Embedded PLC
    >  - celý systém navržen jako 1 PCB - veškeré komponenty integrovány
-   >  - levnější na výrobu
+   >  - levnější na výrobu - vše na 1 desce = jednotná výroba
+   >  - kompaktní - nezabere tolik místa
+   >  - 
    > 
 > PLC se často rozdělují podle výkonu, ale lepší je rozlišovat pro jakou oblast automatizace jsou určena.
 
