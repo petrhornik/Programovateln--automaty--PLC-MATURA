@@ -31,7 +31,20 @@ Programovatelné automaty (PLC)
 > Programovatelný logický automat. Online. In: Wikipedia: the free encyclopedia. San Francisco (CA): Wikimedia Foundation, 2024, 23. 2. 2024 v 09:19. Dostupné z: https://cs.wikipedia.org/wiki/Programovateln%C3%BD_logick%C3%BD_automat. [cit. 2024-12-28].
 
 1. Jaký je rozdíl mezi PLC a embedded PLC? Co znamená slovo embedded obecně a u jakých dalších typů řídících jednotek se používá?
-
+   >
+   > klasické PLC
+   >  - samostatné větší zařízení co se montuje samostatně
+   >  - jednodušší přístup a opravy
+   >  - je modulární dá se upravovat
+   >  - jednodušší nasazení - propojuje se se zbytkem HW externě dráty 
+   
+   > Embedded => označuje že je komponenta či souřástka je napevno umístěna např.: k PCB
+   >             - např. kontroler integrovaný obvobu
+   
+   > Embedded PLC
+   >  - celý systém navržen jako 1 PCB - veškeré komponenty integrovány
+   >  - levnější na výrobu
+   > 
 > PLC se často rozdělují podle výkonu, ale lepší je rozlišovat pro jakou oblast automatizace jsou určena.
 
 2. Vyhledejte a zdůvodněte konkrétní typy PLC pro následující oblasti použití:
