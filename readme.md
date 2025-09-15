@@ -25,6 +25,8 @@ Programovatelné automaty (PLC)
 
 ### 1. Základní vlastnosti a rozdělení PLC
 
+> PLC = řidící jednotka používaná v průmyslu a automatizaci budov
+
 > :key: **PLC**
 >
 > Programovatelný logický automat
