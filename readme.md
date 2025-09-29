@@ -138,7 +138,9 @@ Programovatelné automaty (PLC)
 
       > **odběr** => spotřeba proudu při daném napájecím napětí PLC
       >          - zavisí na: typ CPU, počet připojených I/O modulů, připojené periferie
-      >          - např.: 
+      >          - např.:
+      >
+      > <img src="Snímek obrazovky 2025-09-29 211140.png">
     - Modulární/kompaktní
     - Počty digitálních a analogových vstupů a výstupů a jejich využití
     - Další rozhraní pro komunikaci PLC s okolím (pro programování samotného PLC, tak i pro rozšíření o další moduly a zařízení)
