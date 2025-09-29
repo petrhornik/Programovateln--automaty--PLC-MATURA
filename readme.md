@@ -65,7 +65,7 @@ Programovatelné automaty (PLC)
       > - embedded v případě, že mám nějaké zař. s integrovaným PLC co slouží např. jako wireless hub
     - Automatizace jednoúčelových strojů
       >
-      > Použít modulární PLC - např. Siements S7-1200, Mitsubishi FX5U
+      > Použít modulární PLC - např. Siements S7-1200, Mitsubishi FX5U - možná by šlo i kompaktní pro jednodušší účely
       > - potřeba vyššího výkonu než u domácích
       > - možnost rozšíření o analogové I/O a další komunikační moduly
       > - je potřeba rychlejší odezvy pro řízení motorů, senzorů, pneumatických prvků,...
@@ -78,7 +78,20 @@ Programovatelné automaty (PLC)
       > - správa na dálku bez fyz. přístupu je vyžadována (hotelové komplexy mají více než 1 budovu) + ušetří čas
       > - **Výhoda** ->škálovatelnost a kompatibilita se systémy budovy
     - Automatizace výrobních linek
+      >
+      > Modulární PLC s vysokým výkonem - např.: Siemens S7-1500, Allen-Bradley CompactLogix
+      > - je potřeba řízení nekolika stanic, robotů, dopravníků najednou
+      > - nutná podpora real-time komunikace (Profined, EtherCAT)
+      > - hodí se možnost připojení bezpečnostích modulů (pro detekci nebezpečí na lince - security(aktivní prvek))
+      > - **Výhoda** -> rychlé zpracování dat, robustní konstrukce, pokročilé diagnostické fce.
     - Automatizace velkých továren, elektráren, apod.
+      >
+      > Použít pravděpodobně rackové PLC nebo PAC (programovatelný auto. kontroler)
+      > - např.: Siements S7-400, cokolo od Schneider Electronics
+      > - Nutnost velkého množství I/O a redundantní CPU
+      > - podpora DCS (distribuční řídící systém)
+      > - odolnost vůči extrémním podmínkám - hl. vysoké teploty a vibrace
+      > - **Výhoda** -> maximální spolehlivost, dlouhá životnost, možnost zálohování a vzdálené správy(remote)
 
 3. K nalezeným PLC dohledejte a vysvětlete následující parametry:
     - Parametry CPU
