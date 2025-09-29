@@ -119,8 +119,17 @@ Programovatelné automaty (PLC)
 3. K nalezeným PLC dohledejte a vysvětlete následující parametry:
     - Parametry CPU -> hlavní řídící jednotka
       > - **Frekvence** => rychlost zprac. instrukcí (100 MHz, 1GHz)
-      > - **Doba cyklu** =>
+      > - **Počet jader** => čít víc jader, tím víc addidas
+      > - **Typ CPU uvnitř CPU** => CISC nebo RISC
     - Velikosti a typy pamětí
+      > **Programová** => zde je kód, omezení komplexnosti dle velikosti, uchovává data po vypnutí
+      >                - low-end: 2-128KB, mid-end: 128-512KB, mid+-end: 1-8MB, high-end: 8-32MB
+      
+      > **Datová(RAM)** => proměnné, stavy, běžící procesy, aktuální data, NEuchovává data po vyp.
+      >                - low-end: 1-64KB, mid-end: 64-256KB, mid+-end: 1-4MB, high-end: 4-16MB
+      
+      >  **Externí** => SD karta nebo USB pro zálohy, logování pro diagnostiku, ...
+      >                - - low-end: volitelné, mid-end: cca 2GB, mid+-end: 32GB SD/CF, high-end: redundantní paměť. moduly
     - Napájecí napětí a odběr (proud při napájecím napětí)
     - Modulární/kompaktní
     - Počty digitálních a analogových vstupů a výstupů a jejich využití
