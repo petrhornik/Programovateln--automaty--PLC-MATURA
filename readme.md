@@ -54,6 +54,12 @@ Programovatelné automaty (PLC)
 
 2. Vyhledejte a zdůvodněte konkrétní typy PLC pro následující oblasti použití:
     - Automatizace rodinných domů a bytů
+      >
+      > Použít embedded PLC - např. jednodušší Siemens, LOGO!, Fatek
+      > - není potřeba vel. množ. inputů/outputů
+      > - Jednoduché na nastavení/programování
+      > - integrovaný "centrální" ovládací panel či webové GUI
+      > - např. světla, žaluzie, topení, závlahy, ...
     - Automatizace jednoúčelových strojů
     - Automatizace hotelů a větších budov občanské výstavby
     - Automatizace výrobních linek
