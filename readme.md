@@ -55,13 +55,28 @@ Programovatelné automaty (PLC)
 2. Vyhledejte a zdůvodněte konkrétní typy PLC pro následující oblasti použití:
     - Automatizace rodinných domů a bytů
       >
-      > Použít embedded PLC - např. jednodušší Siemens, LOGO!, Fatek
+      > Použít kompaktní či embedded PLC - např. jednodušší Siemens, LOGO!, Fatek
       > - není potřeba vel. množ. inputů/outputů
       > - Jednoduché na nastavení/programování
       > - integrovaný "centrální" ovládací panel či webové GUI
       > - např. světla, žaluzie, topení, závlahy, ...
+      > - **Výhody** nízká cena, snadná integrace např. do rozvaděče
+      >
+      > - embedded v případě, že mám nějaké zař. s integrovaným PLC co slouží např. jako wireless hub
     - Automatizace jednoúčelových strojů
+      >
+      > Použít modulární PLC - např. Siements S7-1200, Mitsubishi FX5U
+      > - potřeba vyššího výkonu než u domácích
+      > - možnost rozšíření o analogové I/O a další komunikační moduly
+      > - je potřeba rychlejší odezvy pro řízení motorů, senzorů, pneumatických prvků,...
+      > - **Výhody** flexibilita a spolehlivost pro specifické úlohy
     - Automatizace hotelů a větších budov občanské výstavby
+      >
+      > Použít modulární PLC umožňující vzdálenou správu - např.: Wago 750, Beckhoff CX
+      > - je potřeba řídit několik zón (přístupový sys., světla, klimatizace, ...)
+      > - hodí se podpora BACnet, KNX, Modbus pro integraci s BMS (Building Management System)
+      > - správa na dálku bez fyz. přístupu je vyžadována (hotelové komplexy mají více než 1 budovu) + ušetří čas
+      > - **Výhoda** ->škálovatelnost a kompatibilita se systémy budovy
     - Automatizace výrobních linek
     - Automatizace velkých továren, elektráren, apod.
 
