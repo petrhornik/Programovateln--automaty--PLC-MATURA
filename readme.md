@@ -61,7 +61,6 @@ Programovatelné automaty (PLC)
       > - integrovaný "centrální" ovládací panel či webové GUI
       > - např. světla, žaluzie, topení, závlahy, ...
       > - **Výhody** nízká cena, snadná integrace např. do rozvaděče
-      >
       > - embedded v případě, že mám nějaké zař. s integrovaným PLC co slouží např. jako wireless hub
     - Automatizace jednoúčelových strojů
       >
