@@ -95,18 +95,23 @@ Programovatelné automaty (PLC)
       > **Kompaktní PLC** => vše integrováno v 1 CPU a nelze rozšířit o další moduly
       >                - pevně daný počet I/O, jednoduché nasazení, nízká cena
       >                - hl. v malých automatizacích (domovy, jednouč. stroje)
+      >
       > **Modulární PLC** => složení CPU a samostatných externích modulů pro rozšíření/přidání nových fcí.
       >                   - škálování dle potřeby, hl. pro komplexní systémy,
       >                   - výrobní linky, hotely, distr. zař.
+      
       > **BMS**v => centrální sys., který řídí a monitoruje technologie v budově
       >             - např.: světla, vytápění, ventilace, zabezpečené, přístupové systémy, energ. management
       >    -> pro fci se musí použít **standardizované protokoly**
+      >
       >       1) **BACnet** -> pro HVAC, osvětlení, senzory, měření energie
       >                   - otevřený protokol, velká podpora (siemens, honeywell,...)
       >                   - hotely, velké budovy, nemocnice
-      >       2) **KNX** -> domácí a budová automatizace (žaluzie, osvětlení, topení)
+      >       
+      >      2) **KNX** -> domácí a budová automatizace (žaluzie, osvětlení, topení)
       >                   - evropský standard, rezidenční a komerční budovy
       >                   - smart home, kanceláře, školy
+      >
       >       3) **Modbus** -> průmyslevé aplikace, měření, řízení
       >                   - jednoduchý široce rozšiřitenlý, skrze RS485 nebo TCP/IP
       >                   - výrobní linky, kotelny, měření spotřeby
