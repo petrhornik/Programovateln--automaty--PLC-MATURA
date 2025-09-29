@@ -48,7 +48,7 @@ Programovatelné automaty (PLC)
    >  - celý systém navržen jako 1 PCB - veškeré komponenty integrovány
    >  - levnější na výrobu - vše na 1 desce = jednotná výroba
    >  - kompaktní - nezabere tolik místa
-   >  - 
+   >  - hl. v DIY, IoT, řízení s vizualizací
    > 
 > PLC se často rozdělují podle výkonu, ale lepší je rozlišovat pro jakou oblast automatizace jsou určena.
 
@@ -91,6 +91,25 @@ Programovatelné automaty (PLC)
       > - podpora DCS (distribuční řídící systém)
       > - odolnost vůči extrémním podmínkám - hl. vysoké teploty a vibrace
       > - **Výhoda** -> maximální spolehlivost, dlouhá životnost, možnost zálohování a vzdálené správy(remote)
+    - NAVÍC
+      > **Kompaktní PLC** => vše integrováno v 1 CPU a nelze rozšířit o další moduly
+      >                - pevně daný počet I/O, jednoduché nasazení, nízká cena
+      >                - hl. v malých automatizacích (domovy, jednouč. stroje)
+      > **Modulární PLC** => složení CPU a samostatných externích modulů pro rozšíření/přidání nových fcí.
+      >                   - škálování dle potřeby, hl. pro komplexní systémy,
+      >                   - výrobní linky, hotely, distr. zař.
+      > **BMS**v => centrální sys., který řídí a monitoruje technologie v budově
+      >             - např.: světla, vytápění, ventilace, zabezpečené, přístupové systémy, energ. management
+      >    -> pro fci se musí použít **standardizované protokoly**
+      >       1) **BACnet** -> pro HVAC, osvětlení, senzory, měření energie
+      >                   - otevřený protokol, velká podpora (siemens, honeywell,...)
+      >                   - hotely, velké budovy, nemocnice
+      >       2) **KNX** -> domácí a budová automatizace (žaluzie, osvětlení, topení)
+      >                   - evropský standard, rezidenční a komerční budovy
+      >                   - smart home, kanceláře, školy
+      >       3) **Modbus** -> průmyslevé aplikace, měření, řízení
+      >                   - jednoduchý široce rozšiřitenlý, skrze RS485 nebo TCP/IP
+      >                   - výrobní linky, kotelny, měření spotřeby
 
 3. K nalezeným PLC dohledejte a vysvětlete následující parametry:
     - Parametry CPU
