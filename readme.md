@@ -142,7 +142,14 @@ Programovatelné automaty (PLC)
       >
       > <img src="Snímek obrazovky 2025-09-29 211140.png">
     - Modulární/kompaktní
+      > vše je v sekci NAVÍC !
     - Počty digitálních a analogových vstupů a výstupů a jejich využití
+      > - **Digi vst(DI)** -> Tlačítka, senzory – 0/1 logika.
+      > - **Digi výst(DO)** -> Relé, LED, elektromagnety – zapnout/vypnout.
+      > - **Analog vst(AI)** -> Teplota, tlak, hladina – např. 0–10 V, 4–20 mA.
+      > - **Analog výst(AO)** -> Řízení motorů, ventilů – plynulé signály.
+      > - **Využití** -> DI/DO pro logiku, AI/AO pro regulaci a měření.
+
     - Další rozhraní pro komunikaci PLC s okolím (pro programování samotného PLC, tak i pro rozšíření o další moduly a zařízení)
 
 4. V automatizační technice se setkáme s řadou dalších řídících jednotek. Zjistěte, jaké se označují následujícími zkratkami a pro jakou oblast automatizace se používají:
