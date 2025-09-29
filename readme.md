@@ -131,6 +131,14 @@ Programovatelné automaty (PLC)
       >  **Externí** => SD karta nebo USB pro zálohy, logování pro diagnostiku, ...
       >                - - low-end: volitelné, mid-end: cca 2GB, mid+-end: 32GB SD/CF, high-end: redundantní paměť. moduly
     - Napájecí napětí a odběr (proud při napájecím napětí)
+      > **napětí** => nejčastější varianty
+      >    1) **DC** -> 24V stejnosměr., hl. v průmyslu, bezpečné, kompatibilní s většinou senzorů
+      >    2) **AC** -> 100-240V střídavé, u některých kompaktních PLC (siemens, LOGO!)
+      >    3) **Nízké DC** -> 12V stejnosměr., u embedded PLC a DIY (RPI PI + Codesys)
+
+      > **odběr** => spotřeba proudu při daném napájecím napětí PLC
+      >          - zavisí na: typ CPU, počet připojených I/O modulů, připojené periferie
+      >          - např.: 
     - Modulární/kompaktní
     - Počty digitálních a analogových vstupů a výstupů a jejich využití
     - Další rozhraní pro komunikaci PLC s okolím (pro programování samotného PLC, tak i pro rozšíření o další moduly a zařízení)
