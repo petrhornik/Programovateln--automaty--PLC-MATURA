@@ -117,7 +117,9 @@ Programovatelné automaty (PLC)
       >                   - výrobní linky, kotelny, měření spotřeby
 
 3. K nalezeným PLC dohledejte a vysvětlete následující parametry:
-    - Parametry CPU
+    - Parametry CPU -> hlavní řídící jednotka
+      > - **Frekvence** => rychlost zprac. instrukcí (100 MHz, 1GHz)
+      > - **Doba cyklu** =>
     - Velikosti a typy pamětí
     - Napájecí napětí a odběr (proud při napájecím napětí)
     - Modulární/kompaktní
