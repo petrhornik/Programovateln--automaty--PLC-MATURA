@@ -192,6 +192,9 @@ Programovatelné automaty (PLC)
 ### 3. Základní diagnostika PLC
 
 1. Vyhledejte technický list vybraného PLC a zjistěte, co lze zjistit o PLC z kontrolek (LED na samotném PLC).
+   > => stav vstupů, stav připojení antény, sygnalizace běhu, chyby, připojeného USB, display pro další info
+   <img width="682" height="440" alt="Snímek obrazovky 2025-10-05 204439" src="https://github.com/user-attachments/assets/bed234d5-0e21-4c5a-acf3-c9d319fc5ee7" />
+
 
 2. Vymyslete postup, jak pomocí multimetru ověřit:
     - Napětí na napájecích svorkách zdroje a PLC, případně dalších komponent
