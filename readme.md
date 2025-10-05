@@ -198,10 +198,28 @@ Programovatelné automaty (PLC)
 
 2. Vymyslete postup, jak pomocí multimetru ověřit:
     - Napětí na napájecích svorkách zdroje a PLC, případně dalších komponent
+      > 1) nastavím multimetr na stejnosměr. V
+      > 2) černej dám na GND a červenej na 24V (napájení input)
+      > 3) proměřím takto: PLC, I/O moduly, senzory, ...
     - Zkrat mezi vodiči
+      > 1) Vypnu napájení a koncovku si dám na VIDITELNÉ místo
+      > 2) multimetr na pípák (dioda)
+      > 3) změřím co jde mezi výstupy, vstupy, jednot. vodiči
+      > 4) pípnutí = spojení (možný zkrat)
     - Prohození vodičů
+      > 1) ověřit si správnost zapojení dle schématu
+      > 2) pomocí pípáku změřit konce konkrétního vodíče
+      > 3) pípnutí = ten samý vodič (nebo zkrat)
     - Stav DO
+      > 1) zapnu do sítě a přes HMI/ručně přepnu DO výstup
+      > 2) multimetr na stenjosměr V
+      > 3) měřit mezu DO a GND, zap. výstup -> 24V, vypnutý -> 0V
     - Spečené reléové kontakty
+      > 1) vypnout napájení
+      > 2) odpojit výstupní svorky relé (NO/NC kontakt)
+      > 3) multimetr na test obporu
+      > 4) změřit NO a COM -> při vypnutí musí být rozepnuté
+      > 5) NC a COM -> musí být rozepnuté
 
 <details>
     <summary> :bulb: Tip: </summary>
@@ -210,9 +228,23 @@ Programovatelné automaty (PLC)
 
 3. Diagnostiku PLC lze provádět i pomocí programovacího prostředí (IDE). K čemu slouží následující nástroje:
     - Forced value (vnucení/uzamknutí hodnot)
+      > => lze ručně nastavit hodnotu proměnné - hl. pro ladění, testování či simulaci
+      > - např. simulace aktivního sensoru, chci vědět jak se prog. zachová při zapnutém sensoru tak dočasně nastavím jeho prom. na forced ON
+      > - přepisuje běžnou logiku, vše je potřebo na konci vrátit manuálně do původního stavu
     - Nástroje Watch a Monitor
+      > => lze sledovat hodnoty proměnných v reálném čase za běhu prog.
+      > - watchlist => seznam prom., které si ručně vyberu a sleduu jejich akt. hodnoty
+      > - monitor mode => zobrazení hodnot přímo v kódu, u jednot. příkazů, hl. v ladderu nebo STL/FBD
     - Debugger
+      > => pokročilé ladění prog. step-by-step - lze zastavit prog. v urč. místě pro analýzu stavu za urč. podmínek
+      > - Breakpoints => zastaví prog. na urč. řádku
+      > - call stack => sleduje vnořené volání fcí/FB
     - Log soubory
+      > => záznamy událostí, chyb, warningů, hodnot a prom. in real time
+      > - zpětná alalýza závad nebo nestandardního chování
+      > - error logs => chyby co nastaly při běhu
+      > - historie změn prom. => datalogging (grrafy, trendování)
+      > - sys. logy IDE => sestavení projektu, připojení k POLC, překlad chyb 
     - ...
 
 <details>
@@ -223,7 +255,21 @@ Programovatelné automaty (PLC)
 ### 4. Programovací jazyky pro PLC
 
 1. Založte projekt a v něm programy v pěti jazycích (ST - Struktural Text, LD - Ladder Diagram, CFC - Continous Function Chart a dvou dalších podle vlastního výběru).
-
+> 1) LD (LAD) => grafický jaz. (vypadá jako tech. schéma), snadno čitelný
+>             - využití pro log. operace, spínáíní, řízení výstupů
+>             - zákl. prvky: kontakty (NC, NO), cívky, časovače, počítadla
+>
+> 2) FBD (funciton block diagram) => blokové schéma, fce. zapojené jako krabičky s I/O, dobré pro řízení analog. signálů, PID regulace,...
+>                                 - hl. pro strukturované a opakující se fce.
+>
+> 3) ST => textový jaz. podobný C, Pascal - pro složitější výpočty, podmínky, cykly, prácí s daty
+>       - efektivní a přehledné, nejpoužívanější
+>
+> 4) SFC (sequential function chart) => pro sekvenční řízení (sekce výroby, ...)
+>                                    - prog. rozdělen na "kroky" a přechody - dobré pro stavové automaty, dávkový provoz, výrob. linky
+>
+> 5) CFC => neoficiální rozšíření IEC 61131-3, často používané (siemens, beckhoff)
+>        - volné umisťování bloků do prostoru, paralelní a zpětné vazby, propojení libovolně čarami, reálné dat. toky
 2. V každém jazyce napište a odzkoušejte program pro zpožděné vypnutí světla.
 
 > :key: **Programovací jazyky pro PLC**
