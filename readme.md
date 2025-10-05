@@ -154,8 +154,15 @@ Programovatelné automaty (PLC)
 
 4. V automatizační technice se setkáme s řadou dalších řídících jednotek. Zjistěte, jaké se označují následujícími zkratkami a pro jakou oblast automatizace se používají:
     - iPC
+      > => industrial PC (průmyslový osobní počítač) - slouží jako regulátor ve strojním zařízení
+      > - odolnost proti prachu, provoz 24/7, možnost montáže např. do rozvaděče, fanless
+      > - řízení výrobních procesů, zobraz. HMI (human machine interface), běh SCADA systémů, integ. s cloudem
     - NC (Numerical Control)
+      > => číslicové zařízení - automatizace obráběcích a dalších storjů ovládaných ručně přes kola a páky či jakákoli mechanická automatizace
+      > - automatizace CNC (computer numerical controlled) strojů, automatizace manuálních strojů
     - MCU
+      > => micro-controller unit (jednočip) - rpi pi pico, esp32, jakýkoli integrovaný obvod obsahující mikropočítač
+      > - v embedded systémech, v mobilech, domácí spotřebiče, bezpečnostní systémy, ...
 
 ### 2. Části PLC
 
